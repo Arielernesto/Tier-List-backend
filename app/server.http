@@ -1,0 +1,18 @@
+POST http://localhost:4000/tier/
+Content-Type: application/json
+
+ {
+    "description": "ariel123@gmail.com",
+    "rows": [
+    {
+      "id": "1",
+      "rank": "S",
+      "color": "#ff7f80",
+      "items": []
+    },
+    ],
+    "name": "PEPEs",
+    "image": "MUNDO",
+    "pictures": "",
+    "status": false
+ }
