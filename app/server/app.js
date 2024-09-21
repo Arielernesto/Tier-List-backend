@@ -15,7 +15,9 @@ app.use(cors({
 
 app.use(cookieParser())
 app.use(AuthController.authorize)
-
+app.get("/", (req, res) => {
+    return res.json("HOLA MUNDO")
+} )
 app.use("/tier", TierRouter)
 
 
