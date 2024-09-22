@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "type": "module",
+  "main": "app/server/index.js",
   "scripts": {
     "postinstall": "prisma generate",
     "dev": "node --watch app/server/index.js ",
