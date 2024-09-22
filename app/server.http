@@ -16,3 +16,7 @@ Content-Type: application/json
     "pictures": "",
     "status": false
  }
+
+###
+
+POST http://localhost:4000/auth/session
