@@ -50,7 +50,7 @@ export class AuthController{
         return res
         .cookie('access_token', token, {
             httpOnly: true,
-            secure: false,
+            secure: true,
             sameSite: "None"
         })
         .send({username: user.name, email: user.email, profile_photo: user.profile_photo, auth: "ok"})
@@ -90,7 +90,7 @@ export class AuthController{
             return res
             .cookie('access_token', token, {
                 httpOnly: true,
-                secure: false,
+                secure: true,
                 sameSite: 'None'
             })
             .send({username: user.name, email: user.email, profile_photo: user.profile_photo, auth: "ok"})
@@ -153,7 +153,7 @@ export class AuthController{
             return res
             .cookie('access_token', token, {
                 httpOnly: true,
-                secure: false,
+                secure: true,
                 sameSite: 'None'
             })
             .json({status: "ok", userUpdated})
