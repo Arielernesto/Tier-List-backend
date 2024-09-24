@@ -51,6 +51,7 @@ export class AuthController{
         .cookie('access_token', token, {
             httpOnly: true,
             secure: false,
+            sameSite: "None"
         })
         .send({username: user.name, email: user.email, profile_photo: user.profile_photo, auth: "ok"})
         } catch (error) {
@@ -90,6 +91,7 @@ export class AuthController{
             .cookie('access_token', token, {
                 httpOnly: true,
                 secure: false,
+                sameSite: 'None'
             })
             .send({username: user.name, email: user.email, profile_photo: user.profile_photo, auth: "ok"})
         } catch (error) {
@@ -152,7 +154,7 @@ export class AuthController{
             .cookie('access_token', token, {
                 httpOnly: true,
                 secure: false,
-                sameSite: 'strict'
+                sameSite: 'None'
             })
             .json({status: "ok", userUpdated})
         } catch (e) {
