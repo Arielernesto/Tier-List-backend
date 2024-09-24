@@ -19,4 +19,4 @@ Content-Type: application/json
 
 ###
 
-POST https://tier-list-backend.vercel.app/auth/session
+GET https://tier-list-backend.vercel.app/tier/all

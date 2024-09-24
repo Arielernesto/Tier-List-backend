@@ -21,8 +21,8 @@ export class AuthController{
     static async session(req, res){
         const { user } = req.session
         if (!user) return res.json({auth: false})
-        const { name, email, profile_photo} = user
-        return res.json({name, email, profile_photo, auth: true})
+        const { name, email, profile_photo, id} = user
+        return res.json({name, email, profile_photo, id , auth: true})
     }
 
     static async login(req, res){

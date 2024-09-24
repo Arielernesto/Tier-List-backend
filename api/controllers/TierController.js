@@ -143,7 +143,8 @@ export class TierController {
 
             const tierUpdated = await prisma.tier.update({
                 where: {
-                    id: id
+                    id: id,
+                    userId: user.id
                 },
                 data: {
                     name: body.name,
